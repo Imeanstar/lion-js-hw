@@ -32,8 +32,8 @@ let value_id = id_input.value;
 
 id_input.addEventListener('input', () => {
   value_id = id_input.value;
-  let tr = emailReg(value_id);
-  if(tr == false){
+  let iderror = emailReg(value_id);
+  if(iderror == false){
     id_input.classList.add('is--invalid');
   }
   else{
@@ -66,19 +66,7 @@ let value_log = log_input.value;
 log_input.addEventListener('click', (event) => {
   event.preventDefault();
   value_log = log_input.value;
-  console.log('hi1');
   if(value_id==user.id && value_pw==user.pw){
-    console.log('hi2');
     window.location.href = 'welcome.html';
   }
-  else{
-
-  }
 })
-
-
-
-
-
-
-
